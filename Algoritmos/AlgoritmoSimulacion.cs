@@ -165,7 +165,7 @@ namespace Videos_windows_forms.Algoritmos
             while (entra)
             {
                 xi = (a * xi + c) % m;
-                if (!listaSalida.Contains(xi))
+                if (!listaSalida.Contains((xi + 1) % m))
                 {
                     listaSalida.Add((xi + 1) % m);
                 }
