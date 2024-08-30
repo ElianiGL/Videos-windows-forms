@@ -49,7 +49,7 @@ namespace Videos_windows_forms
             int Semilla2 = Convert.ToInt32(textBox7.Text);
 
             // Condiciones
-            if (Semilla1 <= 0 && Semilla2 <= 0)
+            if (Semilla1 <= 0 || Semilla2 <= 0)
             {
                 MessageBox.Show("Valores semilla 1 y semilla 2 tienen que ser mayor que CERO");
                 return;
