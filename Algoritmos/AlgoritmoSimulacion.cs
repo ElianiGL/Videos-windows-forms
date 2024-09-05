@@ -165,9 +165,9 @@ namespace Videos_windows_forms.Algoritmos
             while (entra)
             {
                 xi = (a * xi + c) % m;
-                if (!listaSalida.Contains((xi + 1) % m))
+                if (!listaSalida.Contains(xi))
                 {
-                    listaSalida.Add((xi + 1) % m);
+                    listaSalida.Add(xi);
                 }
                 else
                 {
@@ -186,9 +186,9 @@ namespace Videos_windows_forms.Algoritmos
             while (entrada && t_count <= 25)
             {
                 xi = (11 * a * (xi * xi) + 3 * a * xi + c) % m;
-                if (!listaSalida.Contains((xi + 1) % m))
+                if (!listaSalida.Contains(xi))
                 {
-                    listaSalida.Add(xi % m + 1);
+                    listaSalida.Add(xi);
                 }
                 else
                 {
